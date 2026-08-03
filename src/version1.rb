@@ -11,7 +11,8 @@ meu_vetor = Array.new(indi_vetor)
 
 numeros_armazenados = 0
 colisoes = 0 
-total_sorteios = 0 
+total_sorteios = 0
+
 tempo_inicio = Time.now
 
 while numeros_armazenados < indi_vetor
@@ -26,4 +27,5 @@ while numeros_armazenados < indi_vetor
   end
 end
 
-puts "#{meu_vetor}"
+tempo_fim = Time.now
+tempo_execucao = tempo_fim - tempo_inicio
