@@ -4,7 +4,6 @@ puts "-->Sendo feito em ordem pseudoaleatória, impedindo que um número seja ar
 puts ""
 
 print "Informe o número de indices do vetor: "
-
 indi_vetor = gets.chomp.to_i
 
 while indi_vetor <= 0
@@ -18,7 +17,6 @@ meu_vetor = Array.new(indi_vetor)
 numeros_armazenados = 0
 colisoes = 0 
 total_sorteios = 0
-
 tempo_inicio = Time.now
 
 while numeros_armazenados < indi_vetor
