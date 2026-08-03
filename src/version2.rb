@@ -40,17 +40,6 @@ def preencher_vetor_v2(indi_vetor)
   return meu_vetor, total_sorteios, numeros_armazenados, colisoes, tempo_execucao
 end
 
-def validar_vetor(vetor_gerado, indi_vetor)
-  vetor_original = vetor_gerado.sort
-  vetor_comparacao = (1..indi_vetor).to_a
-
-  if vetor_original == vetor_comparacao
-    return "Todos os números de 1 a N estão presentes sem repetições."
-  else
-    return "O vetor não atende aos requisitos."
-  end
-end
-
 tamanho_n = solicitar_tamanho_vetor()
 meu_vetor, sorteios, armazenados, colisoes, tempo = preencher_vetor_v2(tamanho_n)
 status_validacao = validar_vetor(meu_vetor, tamanho_n)
