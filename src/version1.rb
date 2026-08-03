@@ -50,19 +50,6 @@ def validar_vetor(vetor_gerado, indi_vetor)
   end
 end
 
-def exibir_resultados(vetor, sorteios, armazenados, colisoes, tempo, status_validacao)
-  puts ""
-  print "<################################################"
-  puts "\nVetor gerado:"
-  puts "#{vetor}"
-  puts "Quantidade de números sorteados: #{sorteios}"
-  puts "Quantidade de números armazenados: #{armazenados}"
-  puts "Quantidade de colisões: #{colisoes}"
-  puts "Tempo de execução: #{tempo} segundos"
-  puts "Validação final: #{status_validacao}"
-  print "################################################>\n"
-end
-
 tamanho_n = solicitar_tamanho_vetor()
 meu_vetor, sorteios, armazenados, colisoes, tempo = preencher_vetor_v1(tamanho_n)
 status_validacao = validar_vetor(meu_vetor, tamanho_n)
