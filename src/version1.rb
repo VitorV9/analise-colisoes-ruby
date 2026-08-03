@@ -38,8 +38,3 @@ def preencher_vetor_v1(indi_vetor)
 
   return meu_vetor, total_sorteios, numeros_armazenados, colisoes, tempo_execucao
 end
-
-tamanho_n = solicitar_tamanho_vetor()
-meu_vetor, sorteios, armazenados, colisoes, tempo = preencher_vetor_v1(tamanho_n)
-status_validacao = validar_vetor(meu_vetor, tamanho_n)
-exibir_resultados(meu_vetor, sorteios, armazenados, colisoes, tempo, status_validacao)
