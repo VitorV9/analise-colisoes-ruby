@@ -1,3 +1,4 @@
+require_relative 'solicitaIndi'
 require_relative 'version2'
 require_relative 'validaVetor'
 require_relative 'exibirResult'
