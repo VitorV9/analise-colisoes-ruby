@@ -11,7 +11,6 @@ def solicitar_tamanho_vetor
     print "->Valor inválido, você deve informar um número de indices(N) maior que zero: "
     indi_vetor = gets.chomp.to_i
   end
-
   return indi_vetor
 end
 
