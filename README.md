@@ -1,5 +1,5 @@
 Markdown
-# 🚀 Nome do Projeto
+# 🚀 Análise de colisões com Ruby
 
 Uma frase curta explicando o que este projeto faz (ex: "Script em Ruby para ler e processar dados de um arquivo").
 
