@@ -21,9 +21,11 @@ tempo_inicio = Time.now
 
 while numeros_armazenados < indi_vetor
   total_sorteios += 1
-  indice_sorteado = rand(numeros_disponiveis.length)
-  numero_sorteado = numeros_disponiveis[indice_sorteado]
+  texto_unico = "#{Time.now.nsec}_#{total_sorteios}"
+  indice_sorteado = texto_unico.hash.abs % numeros_disponiveis.length
   
+  numero_sorteado = numeros_disponiveis[indice_sorteado]
+
   meu_vetor[numeros_armazenados] = numero_sorteado
   numeros_armazenados += 1
 
