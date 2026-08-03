@@ -34,6 +34,16 @@ end
 tempo_fim = Time.now
 tempo_execucao = tempo_fim - tempo_inicio
 
+vetor_original = meu_vetor.sort
+vetor_comparacao = (1..indi_vetor).to_a
+
+if vetor_original == vetor_comparacao
+  status_validacao = "Todos os números de 1 a N estão presentes sem repetições."
+else
+  status_validacao = "O vetor não atende aos requisitos."
+end
+
+puts ""
 print "<################################################"
 puts "\nVetor gerado:"
 puts "#{meu_vetor}"
@@ -41,4 +51,5 @@ puts "Quantidade de números sorteados: #{total_sorteios}"
 puts "Quantidade de números armazenados: #{numeros_armazenados}"
 puts "Quantidade de colisões: #{colisoes}"
 puts "Tempo de execução: #{tempo_execucao} segundos"
+puts "Validação final: #{status_validacao}"
 print "################################################>"
