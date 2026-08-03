@@ -29,3 +29,12 @@ end
 
 tempo_fim = Time.now
 tempo_execucao = tempo_fim - tempo_inicio
+
+print "<################################################"
+puts "\nVetor gerado:"
+puts "#{meu_vetor}"
+puts "Quantidade de números sorteados: #{total_sorteios}"
+puts "Quantidade de números armazenados: #{numeros_armazenados}"
+puts "Quantidade de colisões: #{colisoes}"
+puts "Tempo de execução: #{tempo_execucao} segundos"
+print "################################################>"
